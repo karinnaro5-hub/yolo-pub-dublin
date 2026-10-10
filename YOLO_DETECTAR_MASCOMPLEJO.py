@@ -9,7 +9,7 @@ modelo = YOLO(
 )
 
 # 2. DETECTAR OBJETOS EN UNA IMAGEN
-ruta_imagen = "C:\Bigdata.Python.Sanitario\Clase9\cafeteria-dublin.jpg"
+ruta_imagen = "cafeteria-dublin.jpg"
 
 # 3. EJECUTAR EL MODELO SOBRE LA IMAGEN
 resultados = modelo.predict(
