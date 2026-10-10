@@ -27,6 +27,7 @@ resultado = resultados[0]
 conteo_objetos = {}   # Como es un diccionario, hay que poner llaves
 
 #  B. RECORRER TODAS LAS CAJAS (DETECCIONES)
+print("\nDETALLE DE LOS OBJETOS DETECTADOS:")
 
 for numero, caja in enumerate(
     resultado.boxes,
@@ -57,7 +58,6 @@ for numero, caja in enumerate(
     x2 = int(x2)
     y2 = int(y2)
 
-    print("\nDETALLE DE LOS OBJETOS DETECTADOS:")
     print(
     f"\nOBJETO: {numero}"
 )
@@ -78,17 +78,18 @@ for numero, caja in enumerate(
     else:
         conteo_objetos[nombre_clase] = 1
 
-    cantidad_objetos = len(
-        resultado.boxes
-    )
+#   H. MOSTRAR EL TOTAL Y EL CONTEO UNA SOLA VEZ, FUERA DEL BUCLE
+cantidad_objetos = len(
+    resultado.boxes
+)
 
-    print(
+print(
     "\nOBJETOS DETECTADOS:",
     cantidad_objetos
 )
 
-    print(
-        "\nCONTEO POR CATEGORIA:")
+print(
+    "\nCONTEO POR CATEGORIA:")
 
 for nombre_clase, cantidad in conteo_objetos.items():
     print(
