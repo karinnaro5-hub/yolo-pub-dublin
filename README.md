@@ -34,3 +34,30 @@
   - las coordenadas de la caja (`caja.xyxy`: x1 izquierda, y1 arriba, x2 derecha, y2 abajo).
 - Contar los objetos por categoría con un diccionario.
 - Detección **en tiempo real con la webcam** (`source=0`, `stream=True`) para avisar cuando aparece una botella.
+
+## 📁 Estructura del proyecto
+
+| Archivo | Descripción |
+| --- | --- |
+| [`cafeteria-dublin.jpg`](cafeteria-dublin.jpg) | Foto original del pub. |
+| [`YOLO_detectar.py`](YOLO_detectar.py) | Detección básica con YOLOv8 nano: guarda la imagen anotada y cuenta los objetos. |
+| [`YOLO_DETECTAR_MASCOMPLEJO.py`](YOLO_DETECTAR_MASCOMPLEJO.py) | Detección con YOLOv8x: clase, confianza y coordenadas de cada objeto y conteo por categoría. |
+| [`comparar_modelos.py`](comparar_modelos.py) | Ejecuta los dos modelos y genera la gráfica comparativa. |
+| [`cam_tetection.py`](cam_tetection.py) | Detección en directo con la cámara del ordenador; avisa al ver una botella. |
+| [`imagenes/`](imagenes/) | Resultados generados. |
+
+## ▶️ Cómo ejecutarlo
+
+```bash
+pip install -r requirements.txt
+python YOLO_detectar.py                # modelo nano
+python YOLO_DETECTAR_MASCOMPLEJO.py    # modelo extra-grande, con detalle por objeto
+python comparar_modelos.py             # gráfica comparativa
+python cam_tetection.py                # webcam (cerrar con Ctrl+C)
+```
+
+La primera vez, `ultralytics` descarga automáticamente los pesos (`yolov8n.pt`, `yolov8x.pt`), por eso no están en el repositorio.
+
+---
+
+Ejercicio del curso **Big Data con Python (sector sanitario)**.
