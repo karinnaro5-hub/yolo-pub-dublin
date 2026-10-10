@@ -26,13 +26,13 @@ for resultado in resultados:
         confianza = float(
             caja.conf[0]
         )
-# 3. COMPROBAR SI ES UN PERRO
-    if nombre_clase == "bottle":
-        print(
-        "BOTELLA ENCONTRADA",
-        round(
-            confianza * 100,
-            2
-        ),
-        "%"
-        )
+# 3. COMPROBAR SI ES UNA BOTELLA (dentro del bucle, para revisar cada caja)
+        if nombre_clase == "bottle":
+            print(
+                "BOTELLA ENCONTRADA",
+                round(
+                    confianza * 100,
+                    2
+                ),
+                "%"
+            )
