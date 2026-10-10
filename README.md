@@ -65,5 +65,3 @@ La imagen muestra el interior de **[The Church Bar & Restaurant](https://thechur
 La foto se obtuvo de internet y **no es de autoría propia**; se desconoce su autor original. Se usa únicamente con fines educativos y sin ánimo de lucro, como ejemplo de detección de objetos. Si eres el titular de los derechos y quieres que se cite tu autoría o que se retire, abre un *issue* en este repositorio.
 
 ---
-
-Ejercicio del curso **Big Data con Python (sector sanitario)**.
