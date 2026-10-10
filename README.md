@@ -23,3 +23,14 @@
 | YOLOv8 nano | YOLOv8x |
 | --- | --- |
 | ![Resultado nano](imagenes/resultado_yolov8n.jpg) | ![Resultado x](imagenes/resultado_yolov8x.jpg) |
+
+## 🧠 Qué se practica
+
+- Cargar un modelo **preentrenado** de YOLO (`YOLO("yolov8n.pt")`); el `.pt` contiene los pesos, como un `.keras` en Keras.
+- Ejecutar la detección con `modelo.predict(imagen, conf=...)` y controlar el umbral de confianza.
+- Recorrer `resultado.boxes` para obtener de cada objeto:
+  - la clase (`caja.cls` → `modelo.names`),
+  - la confianza (`caja.conf`, de 0 a 1),
+  - las coordenadas de la caja (`caja.xyxy`: x1 izquierda, y1 arriba, x2 derecha, y2 abajo).
+- Contar los objetos por categoría con un diccionario.
+- Detección **en tiempo real con la webcam** (`source=0`, `stream=True`) para avisar cuando aparece una botella.
