@@ -58,6 +58,12 @@ python cam_tetection.py                # webcam (cerrar con Ctrl+C)
 
 La primera vez, `ultralytics` descarga automáticamente los pesos (`yolov8n.pt`, `yolov8x.pt`), por eso no están en el repositorio.
 
+## 📷 Sobre la foto
+
+La imagen muestra el interior de **[The Church Bar & Restaurant](https://thechurch.ie/about/history/)**, en Mary Street (Dublín): la antigua iglesia de St Mary's, de principios del siglo XVIII, con su característico órgano Renatus Harris y sus galerías de madera.
+
+La foto se obtuvo de internet y **no es de autoría propia**; se desconoce su autor original. Se usa únicamente con fines educativos y sin ánimo de lucro, como ejemplo de detección de objetos. Si eres el titular de los derechos y quieres que se cite tu autoría o que se retire, abre un *issue* en este repositorio.
+
 ---
 
 Ejercicio del curso **Big Data con Python (sector sanitario)**.
