@@ -102,7 +102,7 @@ resultado.show()
 
 # 6. GUARDAR IMAGEN CON DETECCIONES
 resultado.save(
-    filename="resultado_cafeteria-dublin.jpg"
+    filename="imagenes/resultado_yolov8x.jpg"
 )
 
 # ANALISIS: me salio la imagen con las etiquetas y la probabilidad de que sea cada objeto etiquetado.
